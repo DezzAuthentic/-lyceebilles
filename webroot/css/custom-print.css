@@ -1,0 +1,110 @@
+@media screen{
+    .pageA4{
+        background-color: white;
+        box-shadow: 0 0px 2px 0px #999;
+        min-width: 827px;
+        /*min-height:1170px;*/
+        margin:auto;
+        padding:10px 30px 10px 30px;
+    }
+    /*.page-content{
+        height: 800px;
+    }*/
+}
+
+
+
+.print-vertical-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.print-logo-container{
+    border-radius: 5px;
+    overflow: hidden;
+    height:130px;
+}
+.page-container{
+    overflow-x:scroll;
+    padding:15px 50px;
+}
+
+.entete{
+    font-size:14px;
+    font-weight:500;
+    line-height:1.2;
+    margin-top:35px;
+}
+.print-footer{
+    font-size:10px;
+    font-weight:600;
+    border-top:solid 1px red;
+    margin:40px 40px 0 40px;  
+    padding:0 10px;
+}
+.print-titre{
+    text-transform: uppercase;
+    font-size:15px;
+    font-weight:700;
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+.page-padding{
+    padding: 10px 25px 25px 25px;
+}
+.print-table th{
+    height: 25px !important;
+    padding: 3px 8px !important;
+    text-align: center;
+    font-weight:400;
+}
+.print-table td{
+    height: 22px !important;
+    padding: 2px 8px !important;
+    text-align: center;
+    line-height: 17px !important;
+}
+
+.matiere{text-align: left !important;}
+.bold{font-weight:900 !important;}
+td, th, table{
+    border: 1px solid #333 !important;
+}
+em{color:#333 !important;}
+
+.appreciations{
+    border: 1px solid #333;
+    min-height:150px;
+    margin-top:30px;
+    padding: 5px 10px;
+}
+
+@page {
+    margin-top: 2cm;
+    margin-bottom: 1.5cm;
+    margin-left:2cm;
+}
+
+.no-break { 
+    page-break-inside: avoid; 
+    break-inside: avoid; 
+}
+
+@media screen{
+    /*.page-footer{
+        position: absolute;
+        bottom:100px;
+        right:0;
+        padding: 0 100px;
+    }*/
+}
+
+@media print{
+    .page-footer{
+            position: absolute;
+            bottom:0;
+            right:0;
+            padding: 50px 0 0 0;
+    }
+}
